@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GI.Devotional — Sacred Stories & Virtual Tours</title>
+<style>
+:root{--night:#fff9e8;--night2:#fff0c7;--gold:#b87512;--cream:#3b2118;--muted:#725c4b;--line:rgba(177,35,35,.22);--kumkuma:#b4232f;--pale:#fffdf5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--night);color:var(--cream);font-family:Georgia,"Noto Serif Telugu",serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+header{position:absolute;top:0;left:0;width:100%;z-index:3;border-bottom:1px solid rgba(177,35,35,.18);background:rgba(255,249,232,.84);backdrop-filter:blur(10px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 0}.brand{display:flex;align-items:center;gap:12px;font-family:Arial,sans-serif;letter-spacing:.08em}.mark{width:42px;height:42px;border:1px solid var(--kumkuma);border-radius:50%;display:grid;place-items:center;color:var(--kumkuma);font-size:20px}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:.2em}.links{display:flex;gap:22px;align-items:center;font:12px Arial,sans-serif;color:#4b2b20}.links a:hover{color:var(--kumkuma)}
+.hero{min-height:690px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(255,249,232,.97) 0%,rgba(255,249,232,.86) 43%,rgba(255,249,232,.22) 100%),linear-gradient(0deg,var(--night),transparent 25%),url('https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=1800&q=85');background-size:cover;background-position:center}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 38%,rgba(180,35,47,.10),transparent 33%);pointer-events:none}.hero-content{position:relative;z-index:1;padding:150px 0 100px;max-width:720px}.eyebrow{font:11px Arial,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--kumkuma)}h1{font:clamp(42px,7vw,76px)/1.12 Arial,sans-serif;letter-spacing:.02em;margin:16px 0 22px;color:#3b2118}h1 span{display:block;color:var(--kumkuma);font-size:.58em;letter-spacing:.12em;margin-top:12px}.hero h2{font-size:clamp(24px,3.5vw,38px);font-weight:400;line-height:1.45;margin:0 0 16px}.hero p{max-width:600px;color:#654b3b;font-size:16px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-block;padding:12px 19px;border:1px solid var(--kumkuma);font:12px Arial,sans-serif;letter-spacing:.04em;color:var(--kumkuma);background:rgba(255,253,245,.72)}.btn.primary{background:var(--kumkuma);border-color:var(--kumkuma);color:#fff9e8}.btn:hover{filter:brightness(1.08)}
+section{padding:78px 0}.section-label{font:10px Arial,sans-serif;letter-spacing:.25em;color:var(--kumkuma);text-transform:uppercase}.section-title{font-size:clamp(28px,4vw,42px);font-weight:400;margin:8px 0 12px}.intro{max-width:680px;color:var(--muted);margin:0 0 32px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{min-height:220px;padding:25px;border:1px solid var(--line);background:linear-gradient(145deg,#fffdf5,#fff3d1);position:relative;overflow:hidden;box-shadow:0 8px 24px rgba(108,62,22,.04)}.card:after{content:"";position:absolute;width:140px;height:140px;border:1px solid rgba(180,35,47,.12);border-radius:50%;right:-55px;bottom:-70px}.num{font:11px Arial,sans-serif;color:var(--kumkuma);letter-spacing:.15em}.card h3{font-size:22px;font-weight:400;margin:12px 0 8px}.card p{font-size:14px;color:var(--muted);margin:0}.tour{background:#fff0c7;border-top:1px solid rgba(177,35,35,.12);border-bottom:1px solid rgba(177,35,35,.12)}.tour-layout{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.tour-art{min-height:330px;border:1px solid var(--line);background:radial-gradient(ellipse at 50% 30%,rgba(255,218,120,.25),transparent 45%),linear-gradient(180deg,rgba(55,25,18,.03),rgba(55,25,18,.65)),url('https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=1000&q=85') center/cover;display:flex;align-items:end;padding:24px}.tour-art span{font:11px Arial,sans-serif;letter-spacing:.18em;color:#fff3ce}.steps{list-style:none;padding:0;margin:22px 0}.steps li{padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:14px}.steps b{color:var(--kumkuma);font:12px Arial,sans-serif;padding-top:5px}.journey{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:28px}.place{border-top:1px solid var(--gold);padding:14px 8px 0}.place strong{display:block;font:14px Arial,sans-serif}.place small{color:var(--muted);font-size:12px}
+.quote{text-align:center;padding:70px 20px;background:linear-gradient(120deg,#fff0c7,#fff9e8);border-top:1px solid var(--line)}.quote blockquote{font-size:clamp(24px,4vw,40px);margin:0 auto 12px;max-width:800px;font-weight:400}.quote p{color:var(--kumkuma);font:11px Arial,sans-serif;letter-spacing:.2em}
+footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);font:11px Arial,sans-serif;background:#fffdf5}.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:800px){.links{display:none}.hero{min-height:650px;background-position:60% center}.cards{grid-template-columns:repeat(2,1fr)}.tour-layout{grid-template-columns:1fr}.tour-art{min-height:260px}.journey{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.card{min-height:175px}.hero-content{padding-top:130px}.nav{padding:13px 0}.brand{font-size:13px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#"><span class="mark">GI</span><span>GI.DEVOTIONAL<small>A DIVISION OF GI CREATIVE SPACE</small></span></a>
+  <nav class="links"><a href="#world">మన ప్రపంచం</a><a href="#stories">కథలు</a><a href="#tours">వర్చువల్ టూర్స్</a><a href="#scriptures">గ్రంథాలు</a><a href="#journey">మన ప్రయాణం</a><a href="#en">తెలుగు | EN</a></nav>
+</div></header>
+<main>
+<section class="hero"><div class="wrap hero-content">
+  <div class="eyebrow">A GI CREATIVE SPACE WORLD</div>
+  <h1>GI.DEVOTIONAL<span>FAITH · HISTORY · DISCOVERY</span></h1>
+  <h2>భక్తి నుంచి… కథల లోతుల్లోకి.</h2>
+  <p>దేవాలయాల చరిత్ర నుంచి పురాణాల అంతరార్థం వరకు — మన ఆధ్యాత్మిక వారసత్వాన్ని కథలుగా తెలుసుకుందాం. మన ఊరి గుడి నుంచి భారతదేశంలోని పవిత్ర క్షేత్రాల వరకు ఒక వర్చువల్ ప్రయాణం.</p>
+  <div class="actions"><a class="btn primary" href="#stories">పవిత్ర కథలను అన్వేషించండి →</a><a class="btn" href="#tours">వర్చువల్ టూర్ ప్రారంభించండి</a></div>
+</div></section>
+<section id="world"><div class="wrap">
+  <div class="section-label">EXPLORE THE DEVOTIONAL WORLD</div><h2 class="section-title">మన ఆధ్యాత్మిక ప్రపంచం</h2>
+  <p class="intro">ప్రతి దేవాలయానికి ఒక కథ ఉంటుంది. ప్రతి సంప్రదాయం వెనుక ఒక నేపథ్యం ఉంటుంది. ప్రతి గ్రంథంలో తెలుసుకోవాల్సిన ఒక భావం ఉంటుంది.</p>
+  <div class="cards" id="stories">
+    <article class="card"><span class="num">01 / SACRED PLACES</span><h3>దేవాలయాలు & చరిత్ర</h3><p>ఆలయాల ఆవిర్భావం, శిల్పకళ, శాసనాలు, ఉత్సవాలు, స్థానిక సంప్రదాయాలు.</p></article>
+    <article class="card" id="scriptures"><span class="num">02 / EPICS & PURANAS</span><h3>పురాణాలు & ఇతిహాసాలు</h3><p>రామాయణం, మహాభారతం, పురాణ కథలు, పాత్రల వెనుక ఉన్న భావాలు.</p></article>
+    <article class="card"><span class="num">03 / SACRED WISDOM</span><h3>వేదాలు & భగవద్గీత</h3><p>ప్రాచీన జ్ఞానం, శ్లోకాల భావం, ధర్మం, జీవన విలువలను సులభంగా తెలుసుకోవడం.</p></article>
+    <article class="card"><span class="num">04 / LEGENDS</span><h3>రహస్యాలు & గాథలు</h3><p>ఆసక్తికరమైన ఆలయ విశేషాలు, స్థానిక గాథలు, చారిత్రక ప్రశ్నలు — ఆధారాలతో పరిశీలన.</p></article>
+    <article class="card"><span class="num">05 / LIVING TRADITIONS</span><h3>ఆచారాలు & పండుగలు</h3><p>పండుగల నేపథ్యం, పూజా సంప్రదాయాలు, అలంకారాల ప్రత్యేకతలు, వాటి సాంస్కృతిక అర్థాలు.</p></article>
+    <article class="card"><span class="num">06 / IMMERSIVE STORIES</span><h3>వర్చువల్ స్టోరీ టూర్స్</h3><p>మ్యాపులు, నిజమైన ప్రదేశాల దృశ్యాలు, కథనం మరియు విజువల్ రీక్రియేషన్లతో క్షేత్ర పరిచయం.</p></article>
+  </div>
+</div></section>
+<section class="tour" id="tours"><div class="wrap tour-layout">
+  <div class="tour-art"><span>FROM OUR VILLAGE TO INDIA</span></div>
+  <div><div class="section-label">TRAVEL THROUGH STORIES</div><h2 class="section-title">ఒక ప్రదేశం… ఒక కథ… ఒక ప్రయాణం.</h2>
+  <p class="intro">మనం ఒక ఆలయాన్ని కేవలం చూడటమే కాదు — దాని స్థలం, చరిత్ర, ప్రజల నమ్మకాలు, సంప్రదాయాలు, కథలను తెలుసుకుంటూ ముందుకు సాగుతాం.</p>
+  <ul class="steps"><li><b>01</b><span><strong>ప్రదేశాన్ని పరిచయం చేసుకోవడం</strong><br><small>గ్రామం, ఆలయం, పరిసరాలు, మ్యాప్</small></span></li><li><b>02</b><span><strong>కథను తెలుసుకోవడం</strong><br><small>స్థల పురాణం, స్థానిక గాథలు, చారిత్రక ఆధారాలు</small></span></li><li><b>03</b><span><strong>వర్చువల్‌గా అన్వేషించడం</strong><br><small>వీడియోలు, చిత్రాలు, దృశ్య పునర్నిర్మాణాలు</small></span></li><li><b>04</b><span><strong>అర్థాన్ని తెలుసుకోవడం</strong><br><small>సంప్రదాయాలు, ఆధ్యాత్మిక భావం, సాంస్కృతిక ప్రాముఖ్యత</small></span></li></ul>
+  <a class="btn" href="#journey">మన ప్రయాణాన్ని చూడండి →</a></div>
+</div></section>
+<section id="journey"><div class="wrap"><div class="section-label">A GROWING SACRED MAP</div><h2 class="section-title">మన ఊరి నుంచి భారతదేశం వరకు</h2><p class="intro">స్థానిక కథలను సేకరిస్తూ, పరిశీలిస్తూ, క్రమంగా మరిన్ని ప్రాంతాలకు విస్తరించే దీర్ఘకాలిక ప్రయాణం.</p>
+<div class="journey"><div class="place"><strong>గ్రామం</strong><small>Village temples</small></div><div class="place"><strong>మండలం</strong><small>Mandal heritage</small></div><div class="place"><strong>జిల్లా</strong><small>District stories</small></div><div class="place"><strong>రాష్ట్రం</strong><small>State pilgrimage</small></div><div class="place"><strong>భారతదేశం</strong><small>India-wide journeys</small></div></div></div></section>
+<div class="quote"><blockquote>“భక్తి మనసులో మొదలవుతుంది.<br>భావం జీవితంలో కనిపిస్తుంది.”</blockquote><p>GI.DEVOTIONAL · GI CREATIVE SPACE</p></div>
+</main>
+<footer><div class="wrap foot"><span>GI CREATIVE SPACE</span><span>Godavari Roots • Ippanapadu Soul</span><span>Concept page · Content and identity can grow with the project</span></div></footer>
+</body></html>
