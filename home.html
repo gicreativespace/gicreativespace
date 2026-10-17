@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b14">
+  <meta name="description" content="GI Creative Space — ఐదు ప్రపంచాలు, ఒకే వేదిక.">
+  <title>GI Creative Space | ఐదు ప్రపంచాలు</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body class="home-page">
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="brand" href="home.html" aria-label="GI Creative Space home">
+        <img class="brand-logo" src="assets/logo/gi-creative-space-logo.png" alt="GI Creative Space logo" onerror="this.style.display='none'">
+        <span class="brand-copy">
+          <span class="brand-name">GI Creative Space</span>
+          <span class="brand-tagline">Five Worlds in One Space</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="మెనూ తెరవండి" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+        <a class="nav-link active" href="#home" data-te="హోమ్" data-en="Home">హోమ్</a>
+        <a class="nav-link" href="#worlds" data-te="ఐదు ప్రపంచాలు" data-en="Five Worlds">ఐదు ప్రపంచాలు</a>
+        <a class="nav-link" href="#visitor-note" data-te="ముందుమాట / సందర్శకుల గమనిక" data-en="Foreword / Visitor's Note">ముందుమాట / సందర్శకుల గమనిక</a>
+        <a class="nav-link" href="about.html" data-te="మా గురించి" data-en="About">మా గురించి</a>
+        <a class="nav-link" href="contact.html" data-te="సంప్రదించండి" data-en="Contact">సంప్రదించండి</a>
+
+        <button class="language-toggle header-language" type="button" data-language-toggle aria-label="భాష మార్చండి">
+          <span class="language-indicator">అ</span>
+          <span data-language-label>English</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="home-hero" id="home">
+      <div class="home-hero-image" aria-hidden="true"></div>
+      <div class="home-hero-overlay" aria-hidden="true"></div>
+
+      <div class="container home-hero-content">
+        <p class="eyebrow" data-te="జి క్రియేటివ్ స్పేస్‌కు స్వాగతం" data-en="WELCOME TO GI CREATIVE SPACE">
+          జి క్రియేటివ్ స్పేస్‌కు స్వాగతం
+        </p>
+
+        <p class="visitor-greeting" id="visitor-greeting"></p>
+
+        <h1>
+          <span data-te="ఒకే వేదిక." data-en="One Space.">ఒకే వేదిక.</span><br>
+          <span class="gold-text" data-te="ఐదు ప్రపంచాలు." data-en="Five Worlds.">ఐదు ప్రపంచాలు.</span><br>
+          <span data-te="అనంతమైన అవకాశాలు." data-en="Infinite Possibilities.">అనంతమైన అవకాశాలు.</span>
+        </h1>
+
+        <p class="hero-description"
+           data-te="సాహిత్యం నుంచి ఆధ్యాత్మికత వరకు, విద్య నుంచి సాంకేతికత వరకు, మన ఊహలకు అవతల ఉన్న అన్వేషణ వరకు — విభిన్న అనుభవాలను ఒకే వేదికపై కలిపే ప్రయాణం."
+           data-en="From writing and spirituality to education, technology and exploration beyond our imagination — discover diverse experiences in one connected space.">
+          సాహిత్యం నుంచి ఆధ్యాత్మికత వరకు, విద్య నుంచి సాంకేతికత వరకు, మన ఊహలకు అవతల ఉన్న అన్వేషణ వరకు — విభిన్న అనుభవాలను ఒకే వేదికపై కలిపే ప్రయాణం.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#worlds">
+            <span data-te="ప్రపంచాలను అన్వేషించండి" data-en="Explore the Worlds">ప్రపంచాలను అన్వేషించండి</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a class="button button-secondary" href="#visitor-note"
+             data-te="మా ముందుమాట చదవండి"
+             data-en="Read Our Foreword">
+            మా ముందుమాట చదవండి
+          </a>
+        </div>
+
+        <div class="hero-caption">
+          <span class="gold-line"></span>
+          <span data-te="ఆలోచన • జ్ఞానం • సంప్రదాయం • ఆవిష్కరణ • అన్వేషణ"
+                data-en="IDEAS • KNOWLEDGE • HERITAGE • INNOVATION • EXPLORATION">
+            ఆలోచన • జ్ఞానం • సంప్రదాయం • ఆవిష్కరణ • అన్వేషణ
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- WELCOME INTRO -->
+    <section class="intro-section section-padding">
+      <div class="container intro-grid">
+        <div>
+          <p class="section-kicker" data-te="ఒక విస్తృతమైన ఆలోచన" data-en="A BIGGER VISION">ఒక విస్తృతమైన ఆలోచన</p>
+          <h2 class="section-heading">
+            <span data-te="విభిన్న ప్రపంచాలు." data-en="Different Worlds.">విభిన్న ప్రపంచాలు.</span><br>
+            <span class="gold-text" data-te="ఒకే లక్ష్యం." data-en="One Shared Vision.">ఒకే లక్ష్యం.</span>
+          </h2>
+        </div>
+
+        <div class="intro-copy">
+          <p data-te="GI Creative Space అనేది సృజనాత్మకత, జ్ఞానం, సంస్కృతి, సాంకేతికత మరియు అన్వేషణకు సంబంధించిన అనుభవాలను ఒకే డిజిటల్ వేదికపై కలపాలనే ఆలోచన."
+             data-en="GI Creative Space is a vision to bring experiences in creativity, knowledge, culture, technology and exploration together in one digital destination.">
+            GI Creative Space అనేది సృజనాత్మకత, జ్ఞానం, సంస్కృతి, సాంకేతికత మరియు అన్వేషణకు సంబంధించిన అనుభవాలను ఒకే డిజిటల్ వేదికపై కలపాలనే ఆలోచన.
+          </p>
+          <p data-te="ప్రతి ప్రపంచానికి ప్రత్యేకమైన గుర్తింపు ఉంటుంది. అన్నీ కలిసి మనిషి ఆలోచనలకు, నేర్చుకోవడానికి, సృష్టించడానికి కొత్త అవకాశాలను అందిస్తాయి."
+             data-en="Each world has its own identity. Together, they create new opportunities to think, learn, discover and create.">
+            ప్రతి ప్రపంచానికి ప్రత్యేకమైన గుర్తింపు ఉంటుంది. అన్నీ కలిసి మనిషి ఆలోచనలకు, నేర్చుకోవడానికి, సృష్టించడానికి కొత్త అవకాశాలను అందిస్తాయి.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIVE WORLDS -->
+    <section class="worlds-section section-padding" id="worlds">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker" data-te="మీ ప్రయాణాన్ని ఎంచుకోండి" data-en="CHOOSE YOUR JOURNEY">మీ ప్రయాణాన్ని ఎంచుకోండి</p>
+            <h2 class="section-heading">
+              <span data-te="మన ఐదు" data-en="Our Five">మన ఐదు</span>
+              <span class="gold-text" data-te="ప్రపంచాలు" data-en="Worlds">ప్రపంచాలు</span>
+            </h2>
+          </div>
+          <p class="section-description"
+             data-te="ప్రతి ప్రపంచం ఒక కొత్త ద్వారం. మీ ఆసక్తికి తగిన ప్రపంచంలోకి అడుగుపెట్టి అన్వేషణ ప్రారంభించండి."
+             data-en="Every world is a new doorway. Step into the world that matches your interests and begin exploring.">
+            ప్రతి ప్రపంచం ఒక కొత్త ద్వారం. మీ ఆసక్తికి తగిన ప్రపంచంలోకి అడుగుపెట్టి అన్వేషణ ప్రారంభించండి.
+          </p>
+        </div>
+
+        <div class="world-grid">
+
+          <a class="world-card" href="worlds/gi-writings/index.html">
+            <img class="world-image" src="https://images.unsplash.com/photo-1455390582262-044c6175fb4d?auto=format&fit=crop&w=1100&q=85" alt="Writing notebook and pen" loading="lazy">
+            <span class="world-number">WORLD 01</span>
+            <div class="world-card-content">
+              <span class="world-category" data-te="పదాలు • భావాలు" data-en="WORDS • THOUGHTS">పదాలు • భావాలు</span>
+              <h3>GI.Writings</h3>
+              <p data-te="కవిత్వం, కథలు, వ్యాసాలు, ఆలోచనలు మరియు భావవ్యక్తీకరణకు ఒక ప్రపంచం."
+                 data-en="A world for poetry, stories, essays, reflections and meaningful expression.">
+                కవిత్వం, కథలు, వ్యాసాలు, ఆలోచనలు మరియు భావవ్యక్తీకరణకు ఒక ప్రపంచం.
+              </p>
+              <span class="world-link"><span data-te="ప్రపంచంలోకి ప్రవేశించండి" data-en="Enter This World">ప్రపంచంలోకి ప్రవేశించండి</span> ↗</span>
+            </div>
+          </a>
+
+          <a class="world-card" href="worlds/gi-devotional/index.html">
+            <img class="world-image" src="https://images.unsplash.com/photo-1606293926075-69a00dbb6b5b?auto=format&fit=crop&w=1100&q=85" alt="Indian temple architecture" loading="lazy">
+            <span class="world-number">WORLD 02</span>
+            <div class="world-card-content">
+              <span class="world-category" data-te="భక్తి • సంప్రదాయం" data-en="DEVOTION • HERITAGE">భక్తి • సంప్రదాయం</span>
+              <h3>GI.Devotional</h3>
+              <p data-te="భక్తి భావనలు, ఆధ్యాత్మిక ఆలోచనలు, సంప్రదాయాలు మరియు మన సాంస్కృతిక వారసత్వం."
+                 data-en="Explore devotional thought, spiritual reflections, traditions and cultural heritage.">
+                భక్తి భావనలు, ఆధ్యాత్మిక ఆలోచనలు, సంప్రదాయాలు మరియు మన సాంస్కృతిక వారసత్వం.
+              </p>
+              <span class="world-link"><span data-te="ప్రపంచంలోకి ప్రవేశించండి" data-en="Enter This World">ప్రపంచంలోకి ప్రవేశించండి</span> ↗</span>
+            </div>
+          </a>
+
+          <a class="world-card" href="worlds/gi-education/index.html">
+            <img class="world-image" src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1100&q=85" alt="Students learning in a classroom" loading="lazy">
+            <span class="world-number">WORLD 03</span>
+            <div class="world-card-content">
+              <span class="world-category" data-te="విద్య • విజ్ఞానం" data-en="EDUCATION • KNOWLEDGE">విద్య • విజ్ఞానం</span>
+              <h3>GI.Education</h3>
+              <p data-te="విద్య, కొత్త నైపుణ్యాలు, చరిత్ర, పురాణాలు మరియు మన చుట్టూ ఉన్న ప్రపంచం గురించి నేర్చుకునే వేదిక."
+                 data-en="A place to learn about education, new skills, history, epics and the world around us.">
+                విద్య, కొత్త నైపుణ్యాలు, చరిత్ర, పురాణాలు మరియు మన చుట్టూ ఉన్న ప్రపంచం గురించి నేర్చుకునే వేదిక.
+              </p>
+              <span class="world-link"><span data-te="ప్రపంచంలోకి ప్రవేశించండి" data-en="Enter This World">ప్రపంచంలోకి ప్రవేశించండి</span> ↗</span>
+            </div>
+          </a>
+
+          <a class="world-card" href="worlds/gi-digital/index.html">
+            <img class="world-image" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1100&q=85" alt="Digital technology workstation" loading="lazy">
+            <span class="world-number">WORLD 04</span>
+            <div class="world-card-content">
+              <span class="world-category" data-te="సాంకేతికత • సృజన" data-en="TECHNOLOGY • CREATIVITY">సాంకేతికత • సృజన</span>
+              <h3>GI.Digital</h3>
+              <p data-te="డిజిటల్ అనుభవాలు, సాంకేతిక పరిష్కారాలు, సృజనాత్మక ఆలోచనలు మరియు ఆవిష్కరణల ప్రపంచం."
+                 data-en="A world of digital experiences, technology solutions, creative ideas and innovation.">
+                డిజిటల్ అనుభవాలు, సాంకేతిక పరిష్కారాలు, సృజనాత్మక ఆలోచనలు మరియు ఆవిష్కరణల ప్రపంచం.
+              </p>
+              <span class="world-link"><span data-te="ప్రపంచంలోకి ప్రవేశించండి" data-en="Enter This World">ప్రపంచంలోకి ప్రవేశించండి</span> ↗</span>
+            </div>
+          </a>
+
+          <a class="world-card" href="worlds/gi-space/index.html">
+            <img class="world-image" src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1100&q=85" alt="Stars and distant galaxies" loading="lazy">
+            <span class="world-number">WORLD 05</span>
+            <div class="world-card-content">
+              <span class="world-category" data-te="అంతరిక్షం • అన్వేషణ" data-en="SPACE • EXPLORATION">అంతరిక్షం • అన్వేషణ</span>
+              <h3>GI.Space</h3>
+              <p data-te="విశ్వ రహస్యాలు, అంతరిక్షం, శాస్త్రీయ ఆసక్తి మరియు ఊహలకు అవధులు లేని అన్వేషణ."
+                 data-en="Explore the universe, space discoveries, scientific curiosity and limitless imagination.">
+                విశ్వ రహస్యాలు, అంతరిక్షం, శాస్త్రీయ ఆసక్తి మరియు ఊహలకు అవధులు లేని అన్వేషణ.
+              </p>
+              <span class="world-link"><span data-te="ప్రపంచంలోకి ప్రవేశించండి" data-en="Enter This World">ప్రపంచంలోకి ప్రవేశించండి</span> ↗</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOREWORD / VISITOR NOTE -->
+    <section class="visitor-note-section section-padding" id="visitor-note">
+      <div class="container visitor-note-layout">
+        <div class="visitor-note-mark" aria-hidden="true">GI</div>
+
+        <div class="visitor-note-content">
+          <p class="section-kicker" data-te="మా ఆహ్వానం" data-en="A NOTE TO OUR VISITORS">మా ఆహ్వానం</p>
+          <h2 class="section-heading"
+              data-te="ముందుమాట"
+              data-en="Foreword">
+            ముందుమాట
+          </h2>
+
+          <p data-te="ప్రియమైన సందర్శకులకు, GI Creative Space‌కు హృదయపూర్వక స్వాగతం. ఇది కేవలం ఒక వెబ్‌సైట్ కాదు; విభిన్న ఆలోచనలు, జ్ఞానం, సంప్రదాయం, సృజనాత్మకత మరియు అన్వేషణను ఒకే వేదికపై కలపాలనే మా ప్రయత్నం."
+             data-en="Dear visitor, welcome to GI Creative Space. This is more than a website; it is our effort to bring diverse ideas, knowledge, heritage, creativity and exploration together in one place.">
+            ప్రియమైన సందర్శకులకు, GI Creative Space‌కు హృదయపూర్వక స్వాగతం. ఇది కేవలం ఒక వెబ్‌సైట్ కాదు; విభిన్న ఆలోచనలు, జ్ఞానం, సంప్రదాయం, సృజనాత్మకత మరియు అన్వేషణను ఒకే వేదికపై కలపాలనే మా ప్రయత్నం.
+          </p>
+
+          <p data-te="ఈ ఐదు ప్రపంచాల్లో మీకు కొత్త ఆలోచనలు లభించాలని, మీ ఆసక్తి మరింత పెరగాలని, నేర్చుకోవడానికి మరియు సృష్టించడానికి కొత్త దారులు తెరుచుకోవాలని మేము ఆశిస్తున్నాము."
+             data-en="We hope these five worlds inspire fresh ideas, deepen your curiosity and open new paths for learning and creation.">
+            ఈ ఐదు ప్రపంచాల్లో మీకు కొత్త ఆలోచనలు లభించాలని, మీ ఆసక్తి మరింత పెరగాలని, నేర్చుకోవడానికి మరియు సృష్టించడానికి కొత్త దారులు తెరుచుకోవాలని మేము ఆశిస్తున్నాము.
+          </p>
+
+          <p class="visitor-note-signoff"
+             data-te="మీ ప్రయాణానికి స్వాగతం — GI Creative Space"
+             data-en="Welcome to your journey — GI Creative Space">
+            మీ ప్రయాణానికి స్వాగతం — GI Creative Space
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING -->
+    <section class="closing-section">
+      <div class="container closing-inner">
+        <div>
+          <p class="section-kicker" data-te="మీ ప్రయాణం ఇక్కడ కొనసాగుతుంది" data-en="YOUR JOURNEY CONTINUES HERE">మీ ప్రయాణం ఇక్కడ కొనసాగుతుంది</p>
+          <h2 data-te="మీరు మొదట ఏ ప్రపంచాన్ని అన్వేషిస్తారు?" data-en="Which world will you explore first?">
+            మీరు మొదట ఏ ప్రపంచాన్ని అన్వేషిస్తారు?
+          </h2>
+        </div>
+        <a class="button button-primary" href="#worlds">
+          <span data-te="ప్రపంచాలను చూడండి" data-en="Explore the Worlds">ప్రపంచాలను చూడండి</span> ↗
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="home.html">GI Creative Space</a>
+      <p data-te="ఐదు ప్రపంచాలు. ఒకే వేదిక." data-en="Five Worlds. One Space.">ఐదు ప్రపంచాలు. ఒకే వేదిక.</p>
+      <div class="footer-links">
+        <a href="about.html" data-te="మా గురించి" data-en="About">మా గురించి</a>
+        <a href="contact.html" data-te="సంప్రదించండి" data-en="Contact">సంప్రదించండి</a>
+        <a href="index.html" data-te="ప్రవేశ ద్వారం" data-en="Entrance">ప్రవేశ ద్వారం</a>
+      </div>
+      <p class="copyright">© <span id="current-year">2026</span> GI Creative Space. <span data-te="అన్ని హక్కులు محفوظించబడ్డాయి." data-en="All rights reserved.">అన్ని హక్కులు محفوظించబడ్డాయి.</span></p>
+    </div>
+  </footer>
+
+</body>
+</html>
